@@ -76,7 +76,9 @@ body.lightning {
     0% {
         filter: brightness(1);
     }
-
+a.link.whatsapp {
+    background: green !important;
+    }
     50% {
         filter: brightness(2.5);
     }
