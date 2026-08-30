@@ -74,5 +74,7 @@ body.lightning {
     margin-top: 15px;
     text-align: center;
 }
-
-
+.whatsapp {
+    background: #25D366 !important;
+    color: white !important;
+}
