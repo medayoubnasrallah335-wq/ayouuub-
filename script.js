@@ -30,3 +30,10 @@ setInterval(() => {
         flash.remove();
     }, 100);
 }, 3500);
+function copyFreeFireID() {
+    const id = document.getElementById("freefire-id").textContent;
+
+    navigator.clipboard.writeText(id).then(() => {
+        alert("✅ تم نسخ Free Fire ID!");
+    });
+        }
