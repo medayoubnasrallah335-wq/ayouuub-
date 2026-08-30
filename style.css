@@ -61,3 +61,21 @@ h1 {
 .link:hover {
     transform: translateY(-2px);
 }
+/* ⚡ تأثير البرق */
+body.lightning {
+    animation: lightningFlash 0.12s ease-in-out;
+}
+
+@keyframes lightningFlash {
+    0% {
+        filter: brightness(1);
+    }
+
+    50% {
+        filter: brightness(2.5);
+    }
+
+    100% {
+        filter: brightness(1);
+    }
+        }
