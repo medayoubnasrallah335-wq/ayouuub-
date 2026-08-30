@@ -11,7 +11,12 @@ body {
     justify-content: center;
     padding: 20px;
     font-family: Arial, sans-serif;
-    background: #111;
+
+    background-image: url("IMG_20260830_184333_283.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .container {
@@ -65,7 +70,7 @@ h1 {
 
 .tiktok {
     color: #000 !important;
-    background: #fff !important;
+    background: #ffffff !important;
 }
 
 .freefire {
