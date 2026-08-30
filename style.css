@@ -75,46 +75,4 @@ body.lightning {
     text-align: center;
 }
 
-.freefire button {
-    display: block;
-    width: 100%;
-    margin-top: 10px;
-    padding: 12px;
-    background: red;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-}
 
-.freefire button:active {
-    transform: scale(0.97);
-}
-
-    50% {
-        filter: brightness(2.5);
-    }
-
-    100% {
-        filter: brightness(1);
-    }
-        }
-.freefire {
-    margin-top: 15px;
-    text-align: center;
-}
-
-.freefire button {
-    display: block;
-    width: 100%;
-    margin-top: 10px;
-    padding: 12px;
-    background: red;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    }
