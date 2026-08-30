@@ -10,11 +10,23 @@ links.forEach(link => {
     });
 });
 
-// ⚡ تأثير البرق
+// ⚡ البرق
 setInterval(() => {
-    document.body.classList.add("lightning");
+    const flash = document.createElement("div");
+
+    flash.style.position = "fixed";
+    flash.style.top = "0";
+    flash.style.left = "0";
+    flash.style.width = "100%";
+    flash.style.height = "100%";
+    flash.style.background = "white";
+    flash.style.opacity = "0.8";
+    flash.style.zIndex = "9999";
+    flash.style.pointerEvents = "none";
+
+    document.body.appendChild(flash);
 
     setTimeout(() => {
-        document.body.classList.remove("lightning");
-    }, 120);
+        flash.remove();
+    }, 100);
 }, 3500);
