@@ -9,3 +9,12 @@ links.forEach(link => {
         }, 150);
     });
 });
+
+// ⚡ تأثير البرق
+setInterval(() => {
+    document.body.classList.add("lightning");
+
+    setTimeout(() => {
+        document.body.classList.remove("lightning");
+    }, 120);
+}, 3500);
