@@ -58,9 +58,15 @@ h1 {
     background: #1877f2;
 }
 
+.whatsapp {
+    color: #fff !important;
+    background: #25D366 !important;
+}
+
 .link:hover {
     transform: translateY(-2px);
 }
+
 /* ⚡ تأثير البرق */
 body.lightning {
     animation: lightningFlash 0.12s ease-in-out;
@@ -71,7 +77,11 @@ body.lightning {
         filter: brightness(1);
     }
 
-a.link.whatsapp {
-    background-color: #25D366 !important;
-    color: white !important;
+    50% {
+        filter: brightness(2.5);
+    }
+
+    100% {
+        filter: brightness(1);
+    }
 }
