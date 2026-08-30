@@ -10,28 +10,31 @@ links.forEach(link => {
     });
 });
 
-// ⚡ البرق
+// ⚡ تأثير البرق
 setInterval(() => {
-    const flash = document.createElement("div");
-
-    flash.style.position = "fixed";
-    flash.style.top = "0";
-    flash.style.left = "0";
-    flash.style.width = "100%";
-    flash.style.height = "100%";
-    flash.style.background = "white";
-    flash.style.opacity = "0.8";
-    flash.style.zIndex = "9999";
-    flash.style.pointerEvents = "none";
-
-    document.body.appendChild(flash);
+    document.body.classList.add("lightning");
 
     setTimeout(() => {
-        flash.remove();
-    }, 100);
+        document.body.classList.remove("lightning");
+    }, 120);
 }, 3500);
 
+// 📋 نسخ Free Fire ID
 function copyFreeFireID() {
     navigator.clipboard.writeText("1728107709");
     alert("✅ تم نسخ Free Fire ID!");
-        }
+}
+
+// 🎵 تشغيل وإيقاف الأغنية
+function toggleMusic() {
+    const music = document.getElementById("music");
+    const button = document.querySelector(".music-button");
+
+    if (music.paused) {
+        music.play();
+        button.textContent = "⏸️";
+    } else {
+        music.pause();
+        button.textContent = "🎵";
+    }
+}
