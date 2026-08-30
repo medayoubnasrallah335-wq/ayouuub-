@@ -31,3 +31,7 @@ setInterval(() => {
     }, 100);
 }, 3500);
 
+function copyFreeFireID() {
+    navigator.clipboard.writeText("1728107709");
+    alert("✅ تم نسخ Free Fire ID!");
+        }
