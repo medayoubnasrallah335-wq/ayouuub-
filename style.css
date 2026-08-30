@@ -87,3 +87,7 @@ a.link.whatsapp {
         filter: brightness(1);
     }
 }
+a.link.freefire {
+    background: red !important;
+    color: white !important;
+}
