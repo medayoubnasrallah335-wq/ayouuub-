@@ -101,12 +101,11 @@ body.lightning {
     }
 }
 
-/* 🎵 زر الموسيقى */
+/* 🎵 زر الموسيقى المتحرك */
 .music-button {
     position: fixed;
     left: 12px;
     top: 15%;
-    transform: translateY(-50%);
     width: 38px;
     height: 38px;
     border: 1px solid rgba(255, 255, 255, 0.4);
@@ -117,13 +116,20 @@ body.lightning {
     cursor: pointer;
     z-index: 1000;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
-    transition: all 0.2s ease;
+
+    animation: musicFloat 2s ease-in-out infinite;
 }
 
-.music-button:hover {
-    transform: translateY(-50%) scale(1.08);
+@keyframes musicFloat {
+    0%, 100% {
+        transform: translateY(-50%) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-50%) translateY(-8px) rotate(8deg);
+    }
 }
 
 .music-button:active {
-    transform: translateY(-50%) scale(0.92);
-    }
+    transform: translateY(-50%) scale(0.9);
+        }
